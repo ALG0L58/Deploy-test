@@ -1,4 +1,5 @@
 @import "reset__style.scss";
+@import "media.scss";
 
 @mixin heading($Fs: 1.8rem, $Mb: 1rem,$Fw: 700) {
     font-size: $Fs;
@@ -53,9 +54,6 @@ body {
 
     display: flex;
     align-items: center;
-    flex-wrap: nowrap;
-
-    
 
     height: 6rem;
 }
@@ -89,13 +87,11 @@ nav {
 
 /*--------------- Main ---------------*/
 .main {
-    text-align: justify;
-
     background-color: white;
 
     img {
             width: 100%;
-            max-width: 100%;
+            height: 100%;
 
             margin-bottom: 1rem;
         }
@@ -109,6 +105,8 @@ nav {
     }
 
     p {
+        text-align: justify;
+
         margin-bottom: 1rem;
     }
 }
