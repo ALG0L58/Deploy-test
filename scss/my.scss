@@ -62,15 +62,18 @@ body {
 
 /*--------------- Navigation ---------------*/
 nav {
+    font-size: 0;
+
     width: 100%;
 
     a {
         font-size: 2rem;
 
-        margin: -2px;
-        padding: 20px;
+        padding: 1.9rem;
 
         color: white;
+
+        transition: background-color 0.3s linear;
 
         &:hover, &.active {
             background-color: rgb(103, 102, 102);
