@@ -1,6 +1,7 @@
 @import "reset__style.scss";
 @import "media.scss";
 
+
 @mixin heading($Fs: 1.8rem, $Mb: 1rem,$Fw: 700) {
     font-size: $Fs;
     font-weight: $Fw;
@@ -89,9 +90,12 @@ nav {
 .main {
     background-color: white;
 
+    
     img {
             width: 100%;
-            height: 100%;
+
+            object-fit: cover;
+            object-position: center;
 
             margin-bottom: 1rem;
         }
@@ -147,6 +151,7 @@ nav {
 
     .footer__inner {
         display: flex;
+        
         justify-content: space-between;
     }
 
@@ -190,3 +195,4 @@ nav {
         margin-bottom: 1rem;
     }
 }
+
