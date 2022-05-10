@@ -1,6 +1,4 @@
 @import "reset__style.scss";
-@import "media.scss";
-
 
 @mixin heading($Fs: 1.8rem, $Mb: 1rem,$Fw: 700) {
     font-size: $Fs;
@@ -80,6 +78,45 @@ nav {
     }
 }
 
+/*--------------- Burger menu ---------------*/
+
+.burger__menu {
+    display: none;
+
+    position: relative;
+
+}
+
+.burger {
+    position: absolute;
+    top: 0;
+    right: 1rem;
+
+    width: 40px;
+    height: 4px;
+
+    background-color: white;
+
+    &::after,
+    &::before {
+        content: "";
+
+        position: absolute;
+
+        width: 40px;
+        height: 4px;
+
+        background-color: white;
+    } 
+
+    &::after {
+        top: 1.5rem;
+    }
+    
+    &::before {
+        bottom: 1.5rem;
+    }
+}
 /*--------------- Main Flex ---------------*/
 .main__flex {
     display: flex;
@@ -196,3 +233,4 @@ nav {
     }
 }
 
+@import "media.scss";

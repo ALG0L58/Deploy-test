@@ -37,7 +37,19 @@
 @media (max-width: 768px) {
     nav {
             display: none;
+    }
+
+    .header__inner {
+        justify-content: flex-end;
+        
+        .burger__menu {
+            display: block;
         }
+    }
+
+    .burger__menu {
+        display: block;
+    }
 
     .main {
         font-size: 1.5rem;
